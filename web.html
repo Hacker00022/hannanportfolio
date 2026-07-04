@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Hannan Rafiq</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between w-full h-18 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur">
+        <a href="#!">
+              <h1 class="h-9 w-auto" style="font-size: 200%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+                PORTFOLIO
+              </h1>
+        </a>
+         <div class="hidden lg:flex items-center gap-8 transition duration-500" >
+             <a href="./index.html" class="hover:text-slate-300 transition">
+               Home
+            </a>
+            <a href="./creations.html" class="hover:text-slate-300 transition">
+               My Creations
+            </a>
+            <a href="./About.html" class="hover:text-slate-300 transition">   
+                About Me
+            </a>
+            <a href="./contact us.html" class="hover:text-slate-300 transition">
+                Contact Me
+            </a>                            
+        </div>
+      
+        <div class="hidden lg:block space-x-3">
+            <a href="./Hannan.pdf.pdf (1).pdf" target="_blank" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md active:scale-95">
+                My Resume
+      </a>
+        </div> 
+        <button class="lg:hidden active:scale-90 transition" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu size-6.5" aria-hidden="true">
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <div id="nav-links" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 lg:hidden transition-transform duration-400 -translate-x-full">
+        <a href="/Portfolio Hannan Rafiq/creations.html">
+           My Creations
+        </a>
+        <a href="/#about">
+            About
+        </a>
+        <a href="/#testimonials">
+            Testimonials
+        </a>
+        <a href="/#contact">
+            Contact
+        </a>
+        <button id="close-menu" class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-slate-100 hover:bg-slate-200 transition text-black rounded-md flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x" aria-hidden="true">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+    </div>
+    
+
+
+<section> 
+            <div id="creation-filters" class="flex flex-wrap items-center justify-center gap-3 mt-16 mb-6">
+           
+            <button class="filter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-filter="ui">UI/UX</button>
+        </div>
+      
+        </section>
+ 
+
+  <section class="flex flex-col items-center creation-section" id="creations-ui" data-section="ui">
+        <div class="flex flex-col items-center mt-20">
+            <h2 class="text-center text-4xl font-semibold max-w-2xl">
+                UI/UX                 <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">Design</span>
+            </h2>
+            <p class="text-center text-slate-400 max-w-lg mt-3">
+              Web-App
+            </p>
+        </div>
+        
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./ui/29838131_7580918.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./ui/BudgetBuddy (2).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./ui/Screenshot 2024-09-23 144010.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./ui/Screenshot 2024-09-23 152610.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./ui/Untitled design (10).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./ui/Untitled design (11).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./ui/Untitled design (12).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./ui/Untitled design (14).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./ui/Untitled design (7).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./ui/Untitled design (8).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./ui/Untitled design (9).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full text-sm text-slate-400 mt-40">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+            
+            <div class="flex flex-col lg:items-center lg:justify-center">
+                <div class="flex flex-col text-sm space-y-2.5">
+                    <h2 class="font-semibold mb-5 text-white">Portfolio</h2>
+                    <a class="hover:text-slate-500 transition" href="./About.html">
+                        About Me
+                    </a>
+                    <a class="hover:text-slate-500 transition" href="./contact us.html">
+                        Contact Me 
+                    </a>
+                    <a class="hover:text-slate-500 transition" href="./Hannan.pdf.pdf (1).pdf" target="_blank" rel="noopener noreferrer">
+                        My Resume
+                    </a>
+                    <a class="hover:text-slate-500 transition" href="./index.html">
+                        My Portfolio
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:items-start">
+                <div class="flex flex-col text-sm space-y-2.5">
+                    <h2 class="font-semibold mb-5 text-white">Social Links</h2>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://www.linkedin.com/in/hannan-rafiq-qureshi-a61ba4339" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://www.instagram.com/jagwarasia121" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://wa.me/03122010196" target="_blank" rel="noopener noreferrer">
+                        WhatsApp
+                    </a>
+                
+                </div>
+            </div>
+           <p class="mt-4 max-w-xs leading-relaxed text-slate-400">
+                        Thanks for visiting my portfolio. Feel free to connect with me anytime.
+                    </p>
+        </div>
+        <p class="py-4 text-center border-t mt-6 border-slate-700">
+            Copyright 2026 © <a href=""></a> All Right Reserved. Designed By Hannan Rafiq</p>
+    </footer>
+      <button onclick="topFunction()" id="myBtn" class="fixed bottom-8 right-8 z-40 p-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg transition-all duration-300 font-bold text-xl leading-none" title="Go to top" style="display: none;">↑</button>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>

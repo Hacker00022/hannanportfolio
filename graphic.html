@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Hannan Rafiq</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between w-full h-18 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur">
+        <a href="#!">
+              <h1 class="h-9 w-auto" style="font-size: 200%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+                PORTFOLIO
+              </h1>
+        </a>
+         <div class="hidden lg:flex items-center gap-8 transition duration-500" >
+             <a href="./index.html" class="hover:text-slate-300 transition">
+               Home
+            </a>
+            <a href="./creations.html" class="hover:text-slate-300 transition">
+               My Creations
+            </a>
+            <a href="./About.html" class="hover:text-slate-300 transition">   
+                About Me
+            </a>
+            <a href="./contact us.html" class="hover:text-slate-300 transition">
+                Contact Me
+            </a>                            
+        </div>
+      
+        <div class="hidden lg:block space-x-3">
+            <a href="./Hannan.pdf.pdf (1).pdf" target="_blank" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md active:scale-95">
+                My Resume
+      </a>
+        </div> 
+        <button class="lg:hidden active:scale-90 transition" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu size-6.5" aria-hidden="true">
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <div id="nav-links" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 lg:hidden transition-transform duration-400 -translate-x-full">
+        <a href="/Portfolio Hannan Rafiq/creations.html">
+           My Creations
+        </a>
+        <a href="/#about">
+            About
+        </a>
+        <a href="/#testimonials">
+            Testimonials
+        </a>
+        <a href="/#contact">
+            Contact
+        </a>
+        <button id="close-menu" class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-slate-100 hover:bg-slate-200 transition text-black rounded-md flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x" aria-hidden="true">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <section> 
+            <div id="creation-filters" class="flex flex-wrap items-center justify-center gap-3 mt-16 mb-6">
+            <button class="filter-btn px-4 py-2 rounded-md bg-indigo-600 text-white" data-filter="all">All</button>
+            <button class="filter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-filter="graphic">My Graphic</button>
+            <button class="filter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-filter="textile">My Textile</button>
+
+        </div>
+        <div id="creation-subfilters" class="flex flex-wrap items-center justify-center gap-3 mt-6 mb-6">
+            <div data-subfilter-group="graphic" class="hidden flex-wrap items-center gap-3">
+                <button class="subfilter-btn px-4 py-2 rounded-md bg-indigo-600 text-white" data-subfilter="all">All</button>
+                <button class="subfilter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-subfilter="logo">Logo Design</button>
+                <button class="subfilter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-subfilter="flyer">Flyer Design</button>
+                <button class="subfilter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-subfilter="wallpaper">Wallpaper Design</button>
+            </div>
+            <div data-subfilter-group="textile" class="hidden flex-wrap items-center gap-3">
+                <button class="subfilter-btn px-4 py-2 rounded-md bg-indigo-600 text-white" data-subfilter="all">All</button>
+                <button class="subfilter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-subfilter="pattern">Pattern Design</button>
+                <button class="subfilter-btn px-4 py-2 rounded-md border border-slate-700 text-slate-200" data-subfilter="mockup">Mockup Design</button>
+            </div>
+        </div></section>
+          
+    <section class="flex flex-col items-center creation-section" id="creations" data-section="graphic">
+  
+        <div class="flex flex-col items-center mt-20 creation-subsection" data-subsection="logo">
+            <h2 class="text-center text-4xl font-semibold max-w-2xl">
+                My Graphic
+                <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">Portfolio</span>
+            </h2>
+            <p class="text-center text-slate-400 max-w-lg mt-3">
+              Logo Design
+            </p>
+        </div>
+        
+<!--Logo Design-->
+       
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/er.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+                  Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/Orange Lion Art & Design Logo.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/Untitled design (1).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/09.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/090.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/1.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/2.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/3.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/4.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/5.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/6.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/80.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/800w-LQrAiwW8inI.webp" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/90.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/AuroraEd.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/Bakerz Bite Logo.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/Cypher (1).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/Cypher.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="logo">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./logo/Untitled design (2).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Lettermarks (Monograms)</h1>
+                    <p class="text-sm mt-2">
+
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./logo/WhatsApp Image 2024-08-22 at 21.52.31_0cd71e82.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Emblems</h1>
+                    <p class="text-sm mt-2">
+                        Logo Design
+                    </p>
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./logo/WhatsApp Image 2024-09-22 at 23.48.46_f6d577e8.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <h1 class="text-3xl font-semibold">Abstract Logo Marks</h1>
+                    <p class="text-sm mt-2">
+                       Logo Design
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+<!--Flyer Design-->        
+
+        <div class="flex flex-col items-center mt-20 creation-subsection" data-subsection="flyer">
+        <h2 class="text-center text-4xl font-semibold max-w-2xl">
+        <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">Flyer Design</span>
+        </h2>
+        </div>
+
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="flyer">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./flyer/1.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./flyer/1696174104237_Red and White Vibrant Political Campaign Poster (1).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./flyer/2.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="flyer">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./flyer/29838131_7580918.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./flyer/3.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./flyer/4.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="flyer">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./flyer/5.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./flyer/77.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./flyer/Blue and Red Political Election Flyer (2).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="flyer">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./flyer/BudgetBuddy (2).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./flyer/Company.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./flyer/CUSTOM WEB DEVELOPMENT.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="flyer">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./flyer/Fresh & High Quality.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./flyer/ign.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./flyer/LETS GO TO PICNIC.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="flyer">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./flyer/MIRHA COSMETICS.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./flyer/Monochrome Wolf Mascot eSports Gaming Logo.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./flyer/Red and White Vibrant Political Campaign Poster.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div>
+        
+<!--Wallpaper Design-->
+        
+        <div class="flex flex-col items-center mt-20 creation-subsection" data-subsection="wallpaper">
+        <h2 class="text-center text-4xl font-semibold max-w-2xl">    
+        <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">Wallpaper Design</span>
+        </h2>
+        </div>
+
+
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="wallpaper">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Prompt engineers"
+                    src="./wallpaper/download (1).jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                   
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-right" alt="Data scientists"
+                    src="./wallpaper/download (2).jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full  object-center" alt="Software engineers"
+                    src="./wallpaper/images (1) - Copy.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+        </div> 
+    </section>
+
+ 
+    <section class="flex flex-col items-center creation-section" id="creations-textile" data-section="textile">
+     
+        <div class="flex flex-col items-center mt-20 creation-subsection" data-subsection="pattern">
+            <h2 class="text-center text-4xl font-semibold max-w-2xl">
+                My Textile
+                <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">Portfolio</span>
+            </h2>
+            <p class="text-center text-slate-400 max-w-lg mt-3">
+              Pattern Design
+            </p>
+        </div>
+
+<!--Pattern Design-->
+       
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./Patterns/1d4d1066-7cd4-4e69-a2ba-40b0f9ad3ec1.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./Patterns/20250722_1917_Bear Umbrella Print_remix_01k0s7v3exfbz8p94s6rhzpcaq (17).png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./Patterns/4486d197-7c99-49b8-88d7-86287be6c2c7.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./Patterns/450e1142-619e-489d-8656-dc080afad53d.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./Patterns/70508f2c-025a-41ff-b3e9-53e17ec5068d.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./Patterns/9685b7ac-eae1-4d77-ba5d-606dab17b9a5.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./Patterns/Childrens seamless pattern with cute clothes for kids_ Cartoon vector baby print with nipples, rattles and toys_.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./Patterns/Happy birthday seamless pattern background design _ Premium Vector.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./Patterns/Padrão perfeito com rabiscos de feliz aniversário Esboço de caixa de presente de decoração de festa e balões Crianças desenhando ilustração vetorial desenhada à mão em fundo branco _ Vetor Premium.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./Patterns/1d4d1066-7cd4-4e69-a2ba-40b0f9ad3ec1.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./Patterns/Детский бесшовный образец с одеждой для детей….jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./Patterns/9685b7ac-eae1-4d77-ba5d-606dab17b9a5.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.07 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.07 AM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.08 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.08 AM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.08 AM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.09 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+         <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.09 AM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.10 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.14 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.13 AM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.14 AM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.15 AM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.57 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.30 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.29 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.29 PM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.28 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.28 PM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.27 PM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.28 PM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.27 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="pattern">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.26 PM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 12.00.25 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./pattren.0/WhatsApp Image 2026-05-25 at 11.59.32 AM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        
+
+<!--Mockup Design-->
+        
+            <div class="flex flex-col items-center mt-20 creation-subsection" data-subsection="mockup">
+            <h2 class="text-center text-4xl font-semibold max-w-2xl">
+                Mockups
+            <span class="bg-gradient-to-t from-indigo-600 to-black p-1 bg-left inline-block bg-no-repeat">Design</span>
+            </h2>
+            </div>
+
+
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/20250722_1910_Teddy Umbrella Print Design_remix_01k0s7eahqfe78aryn2n8vqkax.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/A_photograph_features_an_oval-shaped_baby_lounger_.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/baby beding.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/ChatGPT Image Jul 22, 2025, 07_07_37 PM.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/ChatGPT Image Jul 22, 2025, 09_48_54 PM.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/Net Carry Nest-13.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/Net Carry Nest-9.png" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/pilow.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/Vertbaudet Gemusterte Bodenmatratze in weiß_blau.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/WhatsApp Image 2025-07-20 at 22.55.34_6cf01675.jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/WhatsApp Image 2025-07-20 at 22.55.36_f3865a19 (1).jpg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 11.59.03 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 11.59.03 AM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 11.59.03 AM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 11.59.04 AM (1).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 12.00.56 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 12.00.56 PM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 12.00.55 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 h-100 w-full max-w-5xl mt-18 mx-auto creation-subsection" data-subsection="mockup">
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Prompt engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 12.00.55 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                 
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-right" alt="Data scientists"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 12.00.49 PM.jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  
+                </div>
+            </div>
+            <div class="relative group flex-grow h-[400px] rounded-xl overflow-hidden hover:w-full w-56 transition-all duration-500">
+                <img class="h-full w-full object-cover object-center" alt="Software engineers"
+                    src="./mockups0.1/WhatsApp Image 2026-05-25 at 12.00.47 PM (2).jpeg" />
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white bg-black/50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+              
+                </div>
+            </div>
+        </div>
+        
+    </section>
+ 
+    <!-- Footer Section -->
+    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 w-full text-sm text-slate-400 mt-40">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+            
+            <div class="flex flex-col lg:items-center lg:justify-center">
+                <div class="flex flex-col text-sm space-y-2.5">
+                    <h2 class="font-semibold mb-5 text-white">Portfolio</h2>
+                    <a class="hover:text-slate-500 transition" href="./About.html">
+                        About Me
+                    </a>
+                    <a class="hover:text-slate-500 transition" href="./contact us.html">
+                        Contact Me 
+                    </a>
+                    <a class="hover:text-slate-500 transition" href="./Hannan.pdf.pdf (1).pdf" target="_blank" rel="noopener noreferrer">
+                        My Resume
+                    </a>
+                    <a class="hover:text-slate-500 transition" href="./index.html">
+                        My Portfolio
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:items-start">
+                <div class="flex flex-col text-sm space-y-2.5">
+                    <h2 class="font-semibold mb-5 text-white">Social Links</h2>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://www.linkedin.com/in/hannan-rafiq-qureshi-a61ba4339" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://www.instagram.com/jagwarasia121" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+                    <a class="flex items-center gap-3 hover:text-slate-500 transition" href="https://wa.me/03122010196" target="_blank" rel="noopener noreferrer">
+                        WhatsApp
+                    </a>
+                
+                </div>
+            </div>
+           <p class="mt-4 max-w-xs leading-relaxed text-slate-400">
+                        Thanks for visiting my portfolio. Feel free to connect with me anytime.
+                    </p>
+        </div>
+        <p class="py-4 text-center border-t mt-6 border-slate-700">
+            Copyright 2026 © <a href=""></a> All Right Reserved. Designed By Hannan Rafiq</p>
+    </footer>
+      <button onclick="topFunction()" id="myBtn" class="fixed bottom-8 right-8 z-40 p-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg transition-all duration-300 font-bold text-xl leading-none" title="Go to top" style="display: none;">↑</button>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
