@@ -1679,3 +1679,103 @@ button {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding-inline: 1rem;
+    height: auto;
+  }
+
+  nav h1 {
+    font-size: 1.35rem;
+  }
+
+  body > section:first-of-type {
+    padding-inline: 1rem;
+    margin-top: 0;
+  }
+
+  body > section:first-of-type > div[style*="width: 15%"] {
+    width: min(40%, 180px) !important;
+    margin-top: 2rem !important;
+    margin-bottom: -2rem !important;
+  }
+
+  body > section:first-of-type .flex.items-center.gap-4.mt-8 {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  body > section:first-of-type .flex.items-center.gap-4.mt-8 a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  body > section:first-of-type h1 {
+    font-size: clamp(1.45rem, 5vw, 2.2rem) !important;
+    line-height: 1.25 !important;
+    margin-top: 0.5rem !important;
+  }
+
+  #about .flex.flex-col.items-center > p {
+    margin-left: 0 !important;
+    margin-top: 1.25rem !important;
+    padding: 0 !important;
+    text-align: left;
+  }
+
+  #about .flex.flex-col.items-center > img {
+    width: min(220px, 60%) !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 1.25rem !important;
+  }
+
+  #about .relative.max-w-5xl.mx-auto.grid {
+    margin-top: 2rem !important;
+    padding-inline: 1rem !important;
+  }
+
+  #creation-filters,
+  #creation-subfilters {
+    padding-inline: 1rem;
+  }
+
+  .creation-section .creation-subsection[data-subsection="logo"] {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    height: auto !important;
+    padding-inline: 1rem;
+  }
+
+  .creation-section .creation-subsection[data-subsection="logo"] > div {
+    width: 100% !important;
+    height: 280px !important;
+  }
+
+  footer {
+    padding-inline: 1rem;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  footer .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #myBtn {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
